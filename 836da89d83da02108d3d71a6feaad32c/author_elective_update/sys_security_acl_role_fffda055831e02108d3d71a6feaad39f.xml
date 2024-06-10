@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 01:22:19</sys_created_on>
+        <sys_id>fffda055831e02108d3d71a6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1413035_calc_memory.user</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_security_acl display_value="x_1413035_calc_memory">37fda055831e02108d3d71a6feaad39d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fffda055831e02108d3d71a6feaad39f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 01:22:19</sys_updated_on>
+        <sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Calc">836da89d83da02108d3d71a6feaad32c</application>
+        <file_path/>
+        <instance_id>ca06c6b11b49ce1439a54089bd4bcbca</instance_id>
+        <instance_name>dev247087</instance_name>
+        <name>sys_security_acl_role_fffda055831e02108d3d71a6feaad39f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-20 01:22:19</sys_created_on><sys_id>fffda055831e02108d3d71a6feaad39f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1413035_calc_memory.user</sys_name><sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package><sys_policy/><sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope><sys_security_acl display_value="x_1413035_calc_memory">37fda055831e02108d3d71a6feaad39d</sys_security_acl><sys_update_name>sys_security_acl_role_fffda055831e02108d3d71a6feaad39f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-20 01:22:19</sys_updated_on><sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1788704328</payload_hash>
+        <record_name>x_1413035_calc_memory.user</record_name>
+        <reverted_from/>
+        <source>0b6da89d83da02108d3d71a6feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 01:22:19</sys_created_on>
+        <sys_id>bbfda055831e02108d3d71a6feaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f9397a2820000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 01:22:19</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>bffda0555a1e0210d11d59f9e4d4bba1</update_guid>
+        <update_guid_history>bffda0555a1e0210d11d59f9e4d4bba1:1788704328</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1413035_calc_memory.user">d6fb699b832602108d3d71a6feaad339</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-07 21:16:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>6402ac3cf3ed4a79acaec92409da7001</sys_id>
+        <sys_metadata>fffda055831e02108d3d71a6feaad39f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1413035_calc_memory.user</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_parent display_value="">37fda055831e02108d3d71a6feaad39d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_scope_delete display_value="">01975e9c5fee467480050362a392df10</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_fffda055831e02108d3d71a6feaad39f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_fffda055831e02108d3d71a6feaad39f">bbfda055831e02108d3d71a6feaad3a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-07 21:16:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

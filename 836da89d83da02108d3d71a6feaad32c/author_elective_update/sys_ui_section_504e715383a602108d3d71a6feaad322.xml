@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="504e715383a602108d3d71a6feaad322" sys_domain="global" table="x_1413035_calc_empty_table" version="3" view="">
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_1413035_calc_empty_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-07 22:36:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>504e715383a602108d3d71a6feaad322</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1413035_calc_empty_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+            <sys_update_name>sys_ui_section_504e715383a602108d3d71a6feaad322</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-07 22:36:32</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Calc">836da89d83da02108d3d71a6feaad32c</application>
+        <file_path/>
+        <instance_id>ca06c6b11b49ce1439a54089bd4bcbca</instance_id>
+        <instance_name>dev247087</instance_name>
+        <name>sys_ui_section_504e715383a602108d3d71a6feaad322</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="504e715383a602108d3d71a6feaad322" sys_domain="global" table="x_1413035_calc_empty_table" version="3" view=""><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1413035_calc_empty_table</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-07 22:36:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>504e715383a602108d3d71a6feaad322</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1413035_calc_empty_table</sys_name><sys_overrides/><sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package><sys_policy/><sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope><sys_update_name>sys_ui_section_504e715383a602108d3d71a6feaad322</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-07 22:36:32</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1733435323</payload_hash>
+        <record_name>empty table</record_name>
+        <reverted_from/>
+        <source>0b6da89d83da02108d3d71a6feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-07 22:36:32</sys_created_on>
+        <sys_id>9c4e715383a602108d3d71a6feaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ff4d8af7e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-07 22:36:32</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>5c4e715317a602104ef0db142bc15825</update_guid>
+        <update_guid_history>5c4e715317a602104ef0db142bc15825:-1733435323</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-08 01:58:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>4151a3c75fdc4dbb98beb993d9b12829</sys_id>
+        <sys_metadata>504e715383a602108d3d71a6feaad322</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1413035_calc_empty_table</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_parent display_value="">844e315383a602108d3d71a6feaad3bd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_scope_delete display_value="">01975e9c5fee467480050362a392df10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_504e715383a602108d3d71a6feaad322</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_504e715383a602108d3d71a6feaad322">9c4e715383a602108d3d71a6feaad325</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-08 01:58:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

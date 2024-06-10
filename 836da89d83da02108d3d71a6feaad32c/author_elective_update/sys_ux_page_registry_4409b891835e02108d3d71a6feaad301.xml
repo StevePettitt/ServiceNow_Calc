@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="DELETE">
+        <active>true</active>
+        <admin_panel>0c097891835e02108d3d71a6feaad3fd</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <parent_app display_value="UXR Base Unified App">c4b650c2c702201072b211d4d8c260a4</parent_app>
+        <path>calcui</path>
+        <root_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 02:10:24</sys_created_on>
+        <sys_id>4409b891835e02108d3d71a6feaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CalcUI</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_update_name>sys_ux_page_registry_4409b891835e02108d3d71a6feaad301</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 02:10:24</sys_updated_on>
+        <title>CalcUI</title>
+    </sys_ux_page_registry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Calc">836da89d83da02108d3d71a6feaad32c</application>
+        <file_path/>
+        <instance_id>ca06c6b11b49ce1439a54089bd4bcbca</instance_id>
+        <instance_name>dev247087</instance_name>
+        <name>sys_ux_page_registry_4409b891835e02108d3d71a6feaad301</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry"><sys_ux_page_registry action="INSERT_OR_UPDATE"><active>true</active><admin_panel>0c097891835e02108d3d71a6feaad3fd</admin_panel><admin_panel_table>sys_ux_app_config</admin_panel_table><auth_routes/><page/><parent_app display_value="UXR Base Unified App">c4b650c2c702201072b211d4d8c260a4</parent_app><path>calcui</path><root_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent><sys_class_name>sys_ux_page_registry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-20 02:10:24</sys_created_on><sys_id>4409b891835e02108d3d71a6feaad301</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CalcUI</sys_name><sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package><sys_policy/><sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope><sys_update_name>sys_ux_page_registry_4409b891835e02108d3d71a6feaad301</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-20 02:10:24</sys_updated_on><title>CalcUI</title></sys_ux_page_registry></record_update>]]></payload>
+        <payload_hash>1628604799</payload_hash>
+        <record_name>CalcUI</record_name>
+        <reverted_from/>
+        <source>0b6da89d83da02108d3d71a6feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 02:10:24</sys_created_on>
+        <sys_id>c809b891835e02108d3d71a6feaad304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f93c3a6ea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 02:10:24</sys_updated_on>
+        <type>UX Application</type>
+        <update_guid>cc09b891845e0210812fe872150fc603</update_guid>
+        <update_guid_history>cc09b891845e0210812fe872150fc603:1628604799</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 01:27:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_registry">sys_ux_page_registry</sys_db_object>
+        <sys_id>65d1d3c0a0564afc9b4195340824fa90</sys_id>
+        <sys_metadata>4409b891835e02108d3d71a6feaad301</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CalcUI</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_scope_delete display_value="">01975e9c5fee467480050362a392df10</sys_scope_delete>
+        <sys_update_name>sys_ux_page_registry_4409b891835e02108d3d71a6feaad301</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_registry_4409b891835e02108d3d71a6feaad301">c809b891835e02108d3d71a6feaad304</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-26 01:27:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">2cc5955783d642108d3d71a6feaad3cb</macroponent>
+        <name>btn_input_generic</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/*
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+
+//   Pocket Calculator Application
+//   Developed by Steve Pettitt May/June 2024
+
+
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+
+    const x = event.payload.btn;
+    const num = '1234567890';
+    const ops = '/*+-';
+    const one = '1'; //added change to save
+
+    //Execute this if it's a number
+    if (num.includes(x)) {
+        if (api.state.Overwrite) {
+            api.setState('Display', x);
+            api.setState('Overwrite', false);
+        } else {
+            api.setState('Display', api.state.Display + x);
+        }
+        //BUG - Trouble with this code is that it only works with inputs via buttons
+        //      if the keyboard is used, it's doing sums on whatever is held in the Display string
+        //      this might not represent what's shown on the actual input field
+        //      might need the operators/functions/= to review this value instead of the bound client state 
+        //      easy to fix, but leaving in place now for testing purposes
+        //       - I want to see tests fail, so I can fix them!
+    }
+
+
+    //execute this if it's an operator
+    if (ops.includes(x)) {
+        api.setState('Overwrite', true);
+        api.setState('Memory', api.state.Display);
+        api.setState('Operator', x);
+    }
+
+    //execute this FOR EQUALS
+    if (x == '=') {
+        api.setState('Overwrite', true);
+        //api.setState('Display', 'EQ'); //using this for test purposes
+        switch (api.state.Operator) {
+            case '+':
+                api.setState('Display', Number(api.state.Memory) + Number(api.state.Display));
+                break;
+            case '-':
+                api.setState('Display', Number(api.state.Memory) - Number(api.state.Display));
+                break;
+            case '/':
+                api.setState('Display', Number(api.state.Memory) / Number(api.state.Display));
+                break;
+            case '*':
+                api.setState('Display', Number(api.state.Memory) * Number(api.state.Display));
+                break;
+        }
+    }
+
+
+
+    //this will pick up all the other buttons
+    switch (x) {
+        case 'NEG':
+            api.setState('Display', 0 - Number(api.state.Display));
+            break;
+        case '.':
+            api.setState('Display', api.state.Display + x);
+            // problem with this one is that it doesn't check if field is like *.*
+            // needs validation
+            break;
+        case 'CANCEL':
+            api.setState('Display', 0);
+            api.setState('Overwrite', true);
+            api.setState('Operator', 'NULL');
+            break;
+        case 'LOG':
+            api.setState('Display', Math.log10(Number(api.state.Display)));
+            api.setState('Overwrite', true);
+            break;
+        case 'ANTILOG':
+            api.setState('Display', Math.pow(10, Number(api.state.Display)));
+            api.setState('Overwrite', true);
+            break;
+
+    }
+
+    /*   #########   Known defects    ##########
+    •	Values input via the PC keyboard give unexpected results. Example: position cursor, type “100”, and hit Log gives “0.301…” instead of 2.
+    •	Errors are shown as error codes, not in plain English. An error handler should cover this to give consistent results.
+    •	The use of multiple decimal points in a string should be prevented. 
+    •	Some rounding errors on log(antilog(x))
+    •	Repeating calculations do not give correct results (1 + 1 + 1 = 2)
+    •	A decimal point can be added to the calculation result (1 + 1 = .)
+    *   if statements would be more efficient as one if statemnet, but logically it's fine
+
+    */
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 21:20:36</sys_created_on>
+        <sys_id>ed36bb9b83d282108d3d71a6feaad3b7</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>btn_input_generic</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_update_name>sys_ux_client_script_ed36bb9b83d282108d3d71a6feaad3b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-09 13:13:18</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
