@@ -973,6 +973,7 @@
                                 "border-radius": "var(--now-static-border-radius--lg)",
                                 "border-style": "solid",
                                 "border-width": "1px",
+                                "box-shadow": "var(--now-static-drop-shadow--md)",
                                 "height": "50px",
                                 "margin-bottom": "0",
                                 "margin-left": "var(--now-scalable-space--lg)",
@@ -1532,6 +1533,7 @@
                                 "border-radius": "var(--now-static-border-radius--lg)",
                                 "border-style": "solid",
                                 "border-width": "1px",
+                                "box-shadow": "var(--now-static-drop-shadow--md)",
                                 "height": "50px",
                                 "margin-bottom": "0",
                                 "margin-left": "var(--now-scalable-space--lg)",
@@ -2091,6 +2093,7 @@
                                 "border-radius": "var(--now-static-border-radius--lg)",
                                 "border-style": "solid",
                                 "border-width": "1px",
+                                "box-shadow": "var(--now-static-drop-shadow--md)",
                                 "height": "50px",
                                 "margin-bottom": "0",
                                 "margin-left": "var(--now-scalable-space--lg)",
@@ -2171,8 +2174,8 @@
                         "id": "d37ce8abca89d02905fed903c8e34d8e",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "button_9",
-                    "elementLabel": "Button 9",
+                    "elementId": "button_11",
+                    "elementLabel": "Button 11",
                     "eventMappings": [
                         {
                             "eventMappingId": "clwobbiioywaabbxeeddjhhytiirjjpaatk",
@@ -2213,7 +2216,7 @@
                                         "payload": {
                                             "type": "JSON_LITERAL",
                                             "value": {
-                                                "btn": "3"
+                                                "btn": "1"
                                             }
                                         },
                                         "sysId": "7692a59f83e202108d3d71a6feaad358"
@@ -2248,7 +2251,7 @@
                             "value": {
                                 "code": null,
                                 "comment": "",
-                                "message": "3"
+                                "message": "1"
                             }
                         },
                         "size": {
@@ -2381,8 +2384,8 @@
                         "id": "d37ce8abca89d02905fed903c8e34d8e",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "button_11",
-                    "elementLabel": "Button 11",
+                    "elementId": "button_9",
+                    "elementLabel": "Button 9",
                     "eventMappings": [
                         {
                             "eventMappingId": "clwobbiioywaabbxeeddjhhytiirjjpaatk",
@@ -2423,7 +2426,7 @@
                                         "payload": {
                                             "type": "JSON_LITERAL",
                                             "value": {
-                                                "btn": "1"
+                                                "btn": "3"
                                             }
                                         },
                                         "sysId": "7692a59f83e202108d3d71a6feaad358"
@@ -2458,7 +2461,7 @@
                             "value": {
                                 "code": null,
                                 "comment": "",
-                                "message": "1"
+                                "message": "3"
                             }
                         },
                         "size": {
@@ -2592,7 +2595,7 @@
                     "children": null,
                     "items": [
                         {
-                            "element_id": "button_9",
+                            "element_id": "button_11",
                             "styles": {
                                 "background": "rgb(var(--now-color--neutral-1))",
                                 "border-color": "RGB(var(--now-color--neutral-5))",
@@ -2626,7 +2629,7 @@
                             }
                         },
                         {
-                            "element_id": "button_11",
+                            "element_id": "button_9",
                             "styles": {
                                 "background": "rgb(var(--now-color--neutral-1))",
                                 "border-color": "RGB(var(--now-color--neutral-5))",
@@ -2650,6 +2653,7 @@
                                 "border-radius": "var(--now-static-border-radius--lg)",
                                 "border-style": "solid",
                                 "border-width": "1px",
+                                "box-shadow": "var(--now-static-drop-shadow--md)",
                                 "height": "50px",
                                 "margin-bottom": "0",
                                 "margin-left": "var(--now-scalable-space--lg)",
@@ -3209,6 +3213,7 @@
                                 "border-radius": "var(--now-static-border-radius--lg)",
                                 "border-style": "solid",
                                 "border-width": "1px",
+                                "box-shadow": "var(--now-static-drop-shadow--md)",
                                 "height": "50px",
                                 "margin-bottom": "0",
                                 "margin-left": "var(--now-scalable-space--lg)",
@@ -3437,7 +3442,7 @@
     {
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "0"
+            "value": ""
         },
         "name": "Operator",
         "shape": "",
@@ -3456,9 +3461,18 @@
     {
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "0"
+            "value": ""
         },
-        "name": "Memory",
+        "name": "FirstNumber",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": ""
+        },
+        "name": "LastNumber",
         "shape": "",
         "valueType": "string"
     }
@@ -3467,14 +3481,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 09:23:54</sys_created_on>
         <sys_id>2cc5955783d642108d3d71a6feaad3cb</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
         <sys_update_name>sys_ux_macroponent_2cc5955783d642108d3d71a6feaad3cb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-09 13:13:17</sys_updated_on>
+        <sys_updated_on>2024-06-10 21:59:57</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=2cc5955783d642108d3d71a6feaad3cb"/>
 </record_update>
