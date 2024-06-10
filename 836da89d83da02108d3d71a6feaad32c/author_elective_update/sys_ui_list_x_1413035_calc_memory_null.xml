@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_1413035_calc_memory" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-25 17:31:12</sys_created_on>
+            <sys_id>09bbbdc7839602108d3d71a6feaad3c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:31:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>no1</element>
+            <list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-25 17:31:12</sys_created_on>
+            <sys_id>41bbbdc7839602108d3d71a6feaad3c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:31:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>no2</element>
+            <list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-25 17:31:12</sys_created_on>
+            <sys_id>45bbbdc7839602108d3d71a6feaad3c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:31:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>operator</element>
+            <list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-25 17:31:12</sys_created_on>
+            <sys_id>49bbbdc7839602108d3d71a6feaad3c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:31:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1413035_calc_memory</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-25 17:31:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9bbbdc7839602108d3d71a6feaad3c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1413035_calc_memory</sys_name>
+            <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+            <sys_update_name>sys_ui_list_x_1413035_calc_memory_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:31:12</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Calc">836da89d83da02108d3d71a6feaad32c</application>
+        <file_path/>
+        <instance_id>ca06c6b11b49ce1439a54089bd4bcbca</instance_id>
+        <instance_name>dev247087</instance_name>
+        <name>sys_ui_list_x_1413035_calc_memory_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_1413035_calc_memory" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>number</element><list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-25 17:31:12</sys_created_on><sys_id>09bbbdc7839602108d3d71a6feaad3c6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-25 17:31:12</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>no1</element><list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-25 17:31:12</sys_created_on><sys_id>41bbbdc7839602108d3d71a6feaad3c7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-25 17:31:12</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>no2</element><list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-25 17:31:12</sys_created_on><sys_id>45bbbdc7839602108d3d71a6feaad3c7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-25 17:31:12</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>operator</element><list_id display_value="x_1413035_calc_memory" element="NULL" name="x_1413035_calc_memory" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c9bbbdc7839602108d3d71a6feaad3c3</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-25 17:31:12</sys_created_on><sys_id>49bbbdc7839602108d3d71a6feaad3c7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-25 17:31:12</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_1413035_calc_memory</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-25 17:31:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c9bbbdc7839602108d3d71a6feaad3c3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1413035_calc_memory</sys_name><sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package><sys_policy/><sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope><sys_update_name>sys_ui_list_x_1413035_calc_memory_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-25 17:31:12</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>-2026450615</payload_hash>
+        <record_name>Memory</record_name>
+        <reverted_from/>
+        <source>0b6da89d83da02108d3d71a6feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-25 17:31:12</sys_created_on>
+        <sys_id>01bbbdc7839602108d3d71a6feaad3ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fb0ce79a80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:31:12</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>8dbbbdc7f0960210e966c4cc23235fc9</update_guid>
+        <update_guid_history>8dbbbdc7f0960210e966c4cc23235fc9:-2026450615</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-07 21:16:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>37ca6a7f3e95404595c4528fd4ad9ed1</sys_id>
+        <sys_metadata>c9bbbdc7839602108d3d71a6feaad3c3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1413035_calc_memory</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_parent display_value="">d3fd6055831e02108d3d71a6feaad39f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_scope_delete display_value="">01975e9c5fee467480050362a392df10</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_1413035_calc_memory_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_1413035_calc_memory_null">01bbbdc7839602108d3d71a6feaad3ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-07 21:16:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

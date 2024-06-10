@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config">
+    <sys_ux_app_config action="DELETE">
+        <active>true</active>
+        <custom_icon/>
+        <default_route_type/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <encode_query_string>false</encode_query_string>
+        <icon/>
+        <landing_path>home</landing_path>
+        <name>Home</name>
+        <prefetch_limits/>
+        <sys_class_name>sys_ux_app_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 02:19:56</sys_created_on>
+        <sys_id>d6b4b70f83de02108d3d71a6feaad34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_update_name>sys_ux_app_config_d6b4b70f83de02108d3d71a6feaad34c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-26 02:19:56</sys_updated_on>
+    </sys_ux_app_config>
+    <sys_translated_text action="DELETE" query="documentkey=d6b4b70f83de02108d3d71a6feaad34c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Calc">836da89d83da02108d3d71a6feaad32c</application>
+        <file_path/>
+        <instance_id>ca06c6b11b49ce1439a54089bd4bcbca</instance_id>
+        <instance_name>dev247087</instance_name>
+        <name>sys_ux_app_config_d6b4b70f83de02108d3d71a6feaad34c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config"><sys_ux_app_config action="INSERT_OR_UPDATE"><active>true</active><custom_icon/><default_route_type/><description/><disable_auto_reflow>false</disable_auto_reflow><encode_query_string>false</encode_query_string><icon/><landing_path>home</landing_path><name>Home</name><prefetch_limits/><sys_class_name>sys_ux_app_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-26 02:19:56</sys_created_on><sys_id>d6b4b70f83de02108d3d71a6feaad34c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Home</sys_name><sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package><sys_policy/><sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope><sys_update_name>sys_ux_app_config_d6b4b70f83de02108d3d71a6feaad34c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-26 02:19:56</sys_updated_on></sys_ux_app_config><sys_translated_text action="delete_multiple" query="documentkey=d6b4b70f83de02108d3d71a6feaad34c"/></record_update>]]></payload>
+        <payload_hash>1185037352</payload_hash>
+        <record_name>Home</record_name>
+        <reverted_from/>
+        <source>0b6da89d83da02108d3d71a6feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 02:19:56</sys_created_on>
+        <sys_id>1ab43f0f83de02108d3d71a6feaad30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fb2b28bbc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-26 02:19:56</sys_updated_on>
+        <type>UX App Configuration</type>
+        <update_guid>dab43f0fcdde0210a6d34f47c8e0620b</update_guid>
+        <update_guid_history>dab43f0fcdde0210a6d34f47c8e0620b:1185037352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-07 20:34:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_config">sys_ux_app_config</sys_db_object>
+        <sys_id>10159577b7c84fcc862e1e4034959479</sys_id>
+        <sys_metadata>d6b4b70f83de02108d3d71a6feaad34c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_scope_delete display_value="">01975e9c5fee467480050362a392df10</sys_scope_delete>
+        <sys_update_name>sys_ux_app_config_d6b4b70f83de02108d3d71a6feaad34c</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_config_d6b4b70f83de02108d3d71a6feaad34c">1ab43f0f83de02108d3d71a6feaad30c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-07 20:34:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
