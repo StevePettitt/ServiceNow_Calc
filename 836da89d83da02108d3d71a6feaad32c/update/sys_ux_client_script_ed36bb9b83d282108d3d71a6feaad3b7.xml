@@ -25,6 +25,27 @@ function handler({
     imports
 }) {
 
+    //local function to perform generic calculation
+    function do_calc(n1, n2, op) {
+        var r;
+        switch (op) {
+            case '+':
+                r = Number(n1) + Number(n2);
+                break;
+            case '-':
+                r = Number(n1) - Number(n2);
+                break;
+            case '/':
+                r = Number(n1) / Number(n2);
+                break;
+            case '*':
+                r = Number(n1) * Number(n2);
+                break;
+        }
+
+        return r;
+    }
+
     const x = event.payload.btn;
     const num = '1234567890';
     const ops = '/*+-';
@@ -54,98 +75,70 @@ function handler({
     }
 
     //operator
-    //if         start of calculation: first number in display only
-    //if else    stored first# and Op; second in display and new op in payload
     if (ops.includes(x) && api.state.FirstNumber === "") {
+        //first term
+        api.setState('History', api.state.History + api.state.Display + ' ' + x + ' ');
         api.setState('Overwrite', true);
         api.setState('Operator', x);
         api.setState('FirstNumber', api.state.Display);
-    } else if (ops.includes(x) && api.state.FirstNumber !== "" && api.state.Overwrite === false) {
-        switch (api.state.Operator) {
-            case '+':
-                calc = Number(api.state.FirstNumber) + Number(api.state.Display);
-                break;
-            case '-':
-                calc = Number(api.state.FirstNumber) - Number(api.state.Display);
-                break;
-            case '/':
-                calc = Number(api.state.FirstNumber) / Number(api.state.Display);
-                break;
-            case '*':
-                calc = Number(api.state.FirstNumber) * Number(api.state.Display);
-                break;
-        }
+        api.setState('LastNumber', api.state.Display);
+        api.setState('NewCalc', false);
+
+    } else if (ops.includes(x) && api.state.FirstNumber !== "" && api.state.Overwrite == false && api.state.NewCalc == false) {
+        //second+ term
+        api.setState('History', api.state.History + api.state.Display + ' ' + x + ' ');
+        calc = do_calc(api.state.FirstNumber, api.state.Display, api.state.Operator);
         api.setState('LastNumber', api.state.Display);
         api.setState('Display', calc);
         api.setState('FirstNumber', calc);
         api.setState('Operator', x);
         api.setState('Overwrite', true);
-    } 
-    //////////////////////////////////////////////////////////////////////////////////
-    //equals
+        api.setState('NewCalc', false);
+
+    } else if (ops.includes(x) && api.state.FirstNumber !== "" && api.state.Overwrite) {
+        //new term added after an equals     1+2+3= (6) then +1
+        api.setState('History', api.state.History + ' ' + x + ' ');
+        api.setState('Operator', x);
+        api.setState('NewCalc', false);
+
+    } else if (ops.includes(x) && api.state.FirstNumber !== "" && api.state.Overwrite == false && api.state.NewCalc) {
+        //new calculation started  after an equals      1+2+3= (6) then 1+2=
+        api.setState('History', api.state.History + api.state.Display + ' ' + x + ' ');
+        api.setState('Operator', x);
+        api.setState('NewCalc', false);
+        api.setState('LastNumber', api.state.Display);
+        api.setState('FirstNumber', api.state.Display);
+        api.setState('Overwrite', true);
+    }
 
     //execute for equals
-    //if        one input / operator - no second number in display or storage
-    //else if   input, an operator and 2nd input in storage
-    //else if   input, an operator and 2nd input in display
-
-    if (x == "=" && api.state.FirstNumber !== "" && api.state.Overwrite && api.state.LastNumber === "") {
-        switch (api.state.Operator) {
-            case '+':
-                calc = Number(api.state.FirstNumber) + Number(api.state.FirstNumber);
-                break;
-            case '-':
-                calc = Number(api.state.FirstNumber) - Number(api.state.FirstNumber);
-                break;
-            case '/':
-                calc = Number(api.state.FirstNumber) / Number(api.state.FirstNumber);
-                break;
-            case '*':
-                calc = Number(api.state.FirstNumber) * Number(api.state.FirstNumber);
-                break;
-        }
-        api.setState('LastNumber', api.state.FirstNumber);
+    if (x == "=" && api.state.Overwrite == true && api.state.NewCalc == false) {
+        //this is 1+= 
+        calc = do_calc(api.state.FirstNumber, api.state.LastNumber, api.state.Operator);
+        api.setState('History', api.state.History + api.state.LastNumber + ' = ' + calc + '\n');
         api.setState('Display', calc);
         api.setState('FirstNumber', calc);
+        api.setState('Overwrite', true);
+        api.setState('NewCalc', true);
 
-    } else if (x == "=" && api.state.FirstNumber !== "" && api.state.Overwrite && api.state.LastNumber !== "") {
-        switch (api.state.Operator) {
-            case '+':
-                calc = Number(api.state.FirstNumber) + Number(api.state.LastNumber);
-                break;
-            case '-':
-                calc = Number(api.state.FirstNumber) - Number(api.state.LastNumber);
-                break;
-            case '/':
-                calc = Number(api.state.FirstNumber) / Number(api.state.LastNumber);
-                break;
-            case '*':
-                calc = Number(api.state.FirstNumber) * Number(api.state.LastNumber);
-                break;
-        }
+    } else if (x == "=" && api.state.Overwrite == true && api.state.NewCalc == true) {
+        //this is 1+== 
+        calc = do_calc(api.state.FirstNumber, api.state.LastNumber, api.state.Operator);
+        api.setState('History', api.state.History + api.state.FirstNumber + ' ' + api.state.Operator + ' ' + api.state.LastNumber + ' = ' + calc + '\n');
         api.setState('Display', calc);
         api.setState('FirstNumber', calc);
-        
-    } else if (x == "=" && api.state.FirstNumber !== "" && !api.state.Overwrite) {
-        switch (api.state.Operator) {
-            case '+':
-                calc = Number(api.state.FirstNumber) + Number(api.state.Display);
-                break;
-            case '-':
-                calc = Number(api.state.FirstNumber) - Number(api.state.Display);
-                break;
-            case '/':
-                calc = Number(api.state.FirstNumber) / Number(api.state.Display);
-                break;
-            case '*':
-                calc = Number(api.state.FirstNumber) * Number(api.state.Display);
-                break;
-        }
+        api.setState('Overwrite', true);
+        api.setState('NewCalc', true);
+
+    } else if (x == "=" && api.state.Overwrite == false) {
+        //this is 1+1= and 1+1+1=
+        calc = do_calc(api.state.FirstNumber, api.state.Display, api.state.Operator);
+        api.setState('History', api.state.History + api.state.Display + ' = ' + calc + '\n');
         api.setState('LastNumber', api.state.Display);
         api.setState('Display', calc);
         api.setState('FirstNumber', calc);
-        api.setState('Operator', x);
         api.setState('Overwrite', true);
+        api.setState('NewCalc', true);
     }
 
 
@@ -160,23 +153,32 @@ function handler({
             api.setState('Operator', '');
             api.setState('FirstNumber', '');
             api.setState('LastNumber', '');
+            api.setState('History', '');
+            api.setState('NewCalc', true);
             break;
         case 'LOG':
-            api.setState('Display', Math.log10(Number(api.state.Display)));
+            calc = Math.log10(Number(api.state.Display));
+            api.setState('History', api.state.History + 'LOG (' + api.state.Display + ') = ' + calc + '\n');
+            api.setState('Display', calc);
             api.setState('Overwrite', true);
+            api.setState('FirstNumber', calc);
+            api.setState('NewCalc', true);
             break;
         case 'ANTILOG':
-            api.setState('Display', Math.pow(10, Number(api.state.Display)));
+            calc = Math.pow(10, Number(api.state.Display));
+            api.setState('History', api.state.History + 'ANTILOG (' + api.state.Display + ') = ' + calc + '\n');
+            api.setState('Display', calc);
             api.setState('Overwrite', true);
+            api.setState('FirstNumber', calc);
+            api.setState('NewCalc', true);
             break;
 
     }
 
     /*   #########   Known defects    ##########
-    1	Values input via the PC keyboard give unexpected results. Example: position cursor, type “100”, and hit Log gives “0.301…” instead of 2.
     2	Errors are shown as error codes, not in plain English. An error handler should cover this to give consistent results.
     3	Some rounding errors on log(antilog(x))
-    4   refactoring required
+
 
     */
 }]]></script>
@@ -185,14 +187,14 @@ function handler({
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 21:20:36</sys_created_on>
         <sys_id>ed36bb9b83d282108d3d71a6feaad3b7</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>257</sys_mod_count>
         <sys_name>btn_input_generic</sys_name>
         <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
         <sys_update_name>sys_ux_client_script_ed36bb9b83d282108d3d71a6feaad3b7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-10 21:55:33</sys_updated_on>
+        <sys_updated_on>2024-06-15 23:35:30</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

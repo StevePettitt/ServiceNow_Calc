@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">2cc5955783d642108d3d71a6feaad3cb</macroponent>
+        <name>do_calc</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler() {
+return '1234';
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-14 15:02:32</sys_created_on>
+        <sys_id>6119afd5833202108d3d71a6feaad322</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>do_calc</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_update_name>sys_ux_client_script_6119afd5833202108d3d71a6feaad322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-14 15:05:08</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Calc">836da89d83da02108d3d71a6feaad32c</application>
+        <file_path/>
+        <instance_id>ca06c6b11b49ce1439a54089bd4bcbca</instance_id>
+        <instance_name>dev247087</instance_name>
+        <name>sys_ux_client_script_6119afd5833202108d3d71a6feaad322</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Default"&gt;2cc5955783d642108d3d71a6feaad3cb&lt;/macroponent&gt;&lt;name&gt;do_calc&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler() {
+return '1234';
+
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-14 15:02:32&lt;/sys_created_on&gt;&lt;sys_id&gt;6119afd5833202108d3d71a6feaad322&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;do_calc&lt;/sys_name&gt;&lt;sys_package display_value="Calc" source="x_1413035_calc"&gt;836da89d83da02108d3d71a6feaad32c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Calc"&gt;836da89d83da02108d3d71a6feaad32c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_6119afd5833202108d3d71a6feaad322&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-14 15:05:08&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-444125897</payload_hash>
+        <record_name>do_calc</record_name>
+        <reverted_from/>
+        <source>941d749c837202108d3d71a6feaad381</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-14 15:05:08</sys_created_on>
+        <sys_id>d81a1465833602108d3d71a6feaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1901747edcd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-14 15:05:08</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>501a1465693602106197479a3374304f</update_guid>
+        <update_guid_history>501a1465693602106197479a3374304f:-444125897,bf891825ec3602106cda181ca2ecc924:-410133097,de795ce19a360210404562e4c0687acc:1132508388</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-14 15:29:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>26578823483e4ed09c8a9ef1a3f68900</sys_id>
+        <sys_metadata>6119afd5833202108d3d71a6feaad322</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>do_calc</sys_name>
+        <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
+        <sys_scope_delete display_value="">01975e9c5fee467480050362a392df10</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_6119afd5833202108d3d71a6feaad322</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_6119afd5833202108d3d71a6feaad322">d81a1465833602108d3d71a6feaad34f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-14 15:29:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
