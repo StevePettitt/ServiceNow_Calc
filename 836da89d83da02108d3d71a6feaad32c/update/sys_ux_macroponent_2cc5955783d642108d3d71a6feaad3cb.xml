@@ -370,7 +370,7 @@
                         },
                         "readonly": {
                             "type": "JSON_LITERAL",
-                            "value": false
+                            "value": true
                         },
                         "required": {
                             "type": "JSON_LITERAL",
@@ -410,7 +410,7 @@
                             "styles": {
                                 "align-self": "stretch",
                                 "border-color": "rgb(var(--now-color_background--primary))",
-                                "border-radius": "var(--now-static-border-radius--sm)",
+                                "border-radius": "var(--now-static-border-radius--lg)",
                                 "border-style": "solid",
                                 "border-width": "var(--now-static-space--sm)",
                                 "flex": "none",
@@ -3272,6 +3272,142 @@
         },
         "slot": null,
         "styles": null
+    },
+    {
+        "definition": {
+            "id": "d667a5e769598b2e5c6e92ebe73394f6",
+            "type": "MACROPONENT"
+        },
+        "elementId": "textarea_1",
+        "elementLabel": "Textarea 1",
+        "eventMappings": [
+            
+        ],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "preset": null,
+        "propertyValues": {
+            "autofocus": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "autoresize": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "autoresizeRowsLimit": {
+                "type": "JSON_LITERAL",
+                "value": 10
+            },
+            "color": {
+                "type": "JSON_LITERAL",
+                "value": "initial"
+            },
+            "cols": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "configAria": {
+                "type": "JSON_LITERAL",
+                "value": {}
+            },
+            "disableMaxHeight": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "disabled": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "fieldLayout": {
+                "type": "JSON_LITERAL",
+                "value": {
+                    "layout": "vertical"
+                }
+            },
+            "helperContent": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "hideRequiredIndicator": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "invalid": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "label": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Textarea"
+                }
+            },
+            "maxlength": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "messages": {
+                "type": "JSON_LITERAL",
+                "value": [
+                    
+                ]
+            },
+            "minlength": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "name": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "optional": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "placeholder": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "readonly": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "required": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "resize": {
+                "type": "JSON_LITERAL",
+                "value": "vertical"
+            },
+            "rows": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "showCounter": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "sm"
+            },
+            "value": {
+                "binding": {
+                    "address": [
+                        "History"
+                    ]
+                },
+                "type": "STATE_BINDING"
+            }
+        },
+        "slot": null,
+        "styles": null
     }
 ]</composition>
         <da_relay_models/>
@@ -3340,6 +3476,23 @@
             {
                 "element_id": "container_3",
                 "styles": {}
+            },
+            {
+                "element_id": "textarea_1",
+                "styles": {
+                    "align-self": "flex-start",
+                    "background": "rgb(var(--now-color_surface--neutral-4))",
+                    "border-color": "RGB(var(--now-color--neutral-5))",
+                    "border-radius": "var(--now-static-border-radius--lg)",
+                    "border-style": "solid",
+                    "border-width": "var(--now-static-space--xs)",
+                    "flex": "custom",
+                    "flex-basis": "1",
+                    "height": "200px",
+                    "margin-top": "var(--now-scalable-space--3xl)",
+                    "min-height": "200px",
+                    "width": "400px"
+                }
             }
         ],
         "root": null,
@@ -3422,6 +3575,9 @@
   "message" : "Log",
   "comment" : ""
 }, {
+  "message" : "Textarea",
+  "comment" : ""
+}, {
   "message" : "X",
   "comment" : ""
 } ]</required_translations>
@@ -3475,20 +3631,39 @@
         "name": "LastNumber",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": ""
+        },
+        "name": "History",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "boolean",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "name": "NewCalc",
+        "shape": "",
+        "valueType": "boolean"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 09:23:54</sys_created_on>
         <sys_id>2cc5955783d642108d3d71a6feaad3cb</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>187</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Calc" source="x_1413035_calc">836da89d83da02108d3d71a6feaad32c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Calc">836da89d83da02108d3d71a6feaad32c</sys_scope>
         <sys_update_name>sys_ux_macroponent_2cc5955783d642108d3d71a6feaad3cb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-06-10 21:59:57</sys_updated_on>
+        <sys_updated_on>2024-06-15 23:35:30</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=2cc5955783d642108d3d71a6feaad3cb"/>
 </record_update>
